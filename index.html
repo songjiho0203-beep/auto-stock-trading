@@ -57,4 +57,4 @@ $('start').onclick=()=>{const budget=Number($('budget').value),stop=Number($('st
 $('pause').onclick=()=>{if(!running){log('일시 정지 요청','현재 실행 중인 모의 전략이 없습니다.');return}running=false;$('status').textContent='일시 정지';$('status').className='value';$('statusSub').textContent='모의 전략 일시 정지';log('모의매매 일시 정지','가상 전략 계산 중단')};
 $('stopBtn').onclick=()=>{running=false;$('status').textContent='대기 중';$('status').className='value';$('statusSub').textContent='전략이 실행되지 않음';log('전략 중지','모의 전략을 중지했습니다.')};
 document.querySelectorAll('[data-period]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-period]').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('periodLabel').textContent=b.dataset.period+' 보기 선택됨 · 차트는 시각화용 예시이며 실시간 시세가 아닙니다.';log('차트 기간 변경',b.dataset.period+' · 예시 차트')});
-</script></body></html>
+</script></body></html><!-- GitHub Pages 다시 배포하기 -->
